@@ -1,0 +1,34 @@
+{
+  "name": "alligator",
+  "version": "1.0.0",
+  "description": "An engine for browser boardgames",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w scr/",
+    "test": "ts-mocha test/all.test.ts --verbose"
+  },
+  "author": "Nils Ramstöck",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsRamstoeck/Alligator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NilsRamstoeck/Alligator/issues"
+  },
+  "homepage": "https://github.com/NilsRamstoeck/Alligator#readme",
+  "dependencies": {
+    "@types/supertest": "^2.0.12",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.4",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.7.4"
+  }
+}
