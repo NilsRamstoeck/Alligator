@@ -2,9 +2,10 @@
   "name": "alligator",
   "version": "1.0.0",
   "description": "An engine for browser boardgames",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "dev": "tsc -w scr/",
+    "lint": "eslint --fix src/**/*.ts",
+    "dev": "tsc -w",
     "test": "ts-mocha test/all.test.ts --verbose"
   },
   "author": "Nils Ramstöck",
@@ -24,8 +25,11 @@
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
+    "@types/express": "^4.17.13",
     "@types/mocha": "^9.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
     "chai": "^4.3.6",
+    "eslint": "^8.19.0",
     "mocha": "^10.0.0",
     "supertest": "^6.2.4",
     "ts-mocha": "^10.0.0",
