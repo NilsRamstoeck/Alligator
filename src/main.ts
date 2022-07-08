@@ -9,7 +9,7 @@ server.on('error', (err: NodeJS.ErrnoException) => {
    if(err.code == 'EADDRINUSE'){
       console.log('Address in use');
       server.close();
-   };
+   }
 });
 
 //Gracefully shut down on SIGTERM
